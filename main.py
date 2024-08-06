@@ -21,6 +21,7 @@ def create_tables():
         conn.execute(
             "CREATE TABLE IF NOT EXISTS helloworld "
             "(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, helloworld VARCHAR(100) NOT NULL);"
+            "INSERT INTO helloworld (id, message) VALUES (1, 'Hello World');"
         )
 @app.route('/')
 def index():
