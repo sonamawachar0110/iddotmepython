@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, Response, redirect, url_for
 
 from werkzeug.exceptions import abort
-
 from . import sql
 
 # This global variable is declared with a value of `None`, instead of calling
